@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="head">Validator Game</h1>
+        <form id="forma" action="">
+            <div class="inputs">
+                <div class="inpwrap">
+                    <label class="lbl" for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="inpwrap">
+                    <label class="lbl" for="email">Email</label>
+                    <input autocomplete="username" type="email" name="email" id="email">
+                </div>
+                <div class="inpwrap">
+                    <label class="lbl" for="password">Password</label>
+                    <input autocomplete="current-password" type="password" name="password" id="password">
+                </div>
+                <div class="inpwrap">
+                    <label class="lbl">Gender</label>
+                    <label>Male</label>
+                    <input type="radio" name="radio" id="male">
+                    <label>Female</label>
+                    <input type="radio" name="radio" id="female">
+                </div>
+                <div class="inpwrap">
+                    <label class="lbl">Sports</label>
+                    <label for="tennis">Tennis</label>
+                    <input type="checkbox" name="tennis" id="tennis">
+                    <label for="running">Running</label>
+                    <input type="checkbox" name="running" id="running">
+                    <label for="football">Football</label>
+                    <input type="checkbox" name="football" id="football">
+                </div>
+
+                <div class="inpwrap">
+                    <label class="lbl" for="country">Country</label>
+                    <select name="country" id="country">
+                        <option selected disabled>Select Country</option>
+                        <option value="egypt">Egypt</option>
+                        <option value="spain">Spain</option>
+                        <option value="morocco">Morocco</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+            </div>
+            <div class="w-100">
+                <div class="w-20"></div>
+                <div class="wrapbtn">
+                    <button id="submit" type="submit">Submit</button>
+                    <button id="reset" type="reset">Reset</button>
+                </div>
+            </div>
+            <ul id="list">
+                <div>
+                    <li id="nValid">- Name is required.</li>
+                    <li id="pValid">- Password must be 8 chars at least.</li>
+                    <li id="sValid">- Please select at least two sports.</li>
+                </div>
+                <div>
+                    <li id="eValid">- Email is not valid.</li>
+                    <li id="gValid">- Please select your gender.</li>
+                    <li id="cValid">- Please select your country.</li>
+                </div>
+            </ul>
+        </form>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
